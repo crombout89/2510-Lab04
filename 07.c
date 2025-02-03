@@ -33,7 +33,7 @@ int main() {
     int result = max_abs(data, length);
 
     // Print the result
-    printf("The number with the largest absolute value is: %d\n", result);
+    printf("The largest absolute value is: %d\n", abs(result));
 
     return 0;
 }
