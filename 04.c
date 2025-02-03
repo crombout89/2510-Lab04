@@ -12,11 +12,11 @@ void nonStart (char string1[], char string2[]) {
     size_t index;
 
     // String 1
-    for (index = 1; string1[index] != 0; index++) {
+    for (index = 1; string1[index] != '\0'; index++) {
         printf("%c", string1[index]);
     }
     // String 2
-    for (index = 1; string2[index] != 0; index++) {
+    for (index = 1; string2[index] != '\0'; index++) {
         printf("%c", string2[index]);
     }
     printf("\n");
