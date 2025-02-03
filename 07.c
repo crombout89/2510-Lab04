@@ -6,10 +6,10 @@ Prototype: int max_abs (const int data[], size_t length); */
 #include <stdlib.h>
 
 int max_abs(const int data[], size_t length) {
-   int maxValue = data[0];
+   int maxValue = abs(data[0]);
    for (size_t index = 1; index < length; index++) {
        if (abs(data[index]) > abs(maxValue))
-           maxValue = data[index];
+           maxValue = abs(data[index]);
    }
    return maxValue;
 }
@@ -33,7 +33,7 @@ int main() {
     int result = max_abs(data, length);
 
     // Print the result
-    printf("The largest absolute value is: %d\n", abs(result));
+    printf("The largest absolute value is: %d\n", result);
 
     return 0;
 }
